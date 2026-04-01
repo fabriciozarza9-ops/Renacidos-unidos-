@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Renacidos FC ⚽</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            /* Colores basados en tu escudo y remera */
+            --azul-oscuro: #1b4965;
+            --dorado: #cf9f3e;
+            --rojo-milan: #bc002d;
+            --negro: #000000;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #0b1a24;
+            color: var(--blanco);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('remera.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--blanco);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--dorado);
+        }
+
+        .logo-club {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--dorado);
+            box-shadow: 0 0 20px var(--dorado);
+            margin-bottom: 15px;
+        }
+
+        .container { width: 95%; max-width: 900px; margin: auto; padding: 20px; }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            border-left: 5px solid var(--dorado);
+        }
+
+        h2 { color: var(--dorado); text-transform: uppercase; letter-spacing: 2px; }
+
+        .btn-ws {
+            display: block;
+            background: #25d366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-ws:hover { background: #128c7e; transform: scale(1.02); }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background: rgba(0,0,0,0.3); }
+        th { background: var(--azul-oscuro); color: var(--dorado); padding: 12px; }
+        td { padding: 12px; border-bottom: 1px solid #333; text-align: center; }
+
+        .badge-free {
+            background: var(--rojo-milan);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #888; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="escudo.jpg" alt="Escudo Renacidos FC" class="logo-club">
+    <h1>CLUB RENACIDOS FC ⚽</h1>
+    <p>Caaguazú, Paraguay 🇵🇾</p>
+    <span class="badge-free">ENTRADA TOTALMENTE GRATIS</span>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2><i class="fas fa-info-circle"></i> Información General</h2>
+        <p><strong>📍 Ubicación:</strong> GXVQ+WW8, Caaguazú</p>
+        <p><strong>⏰ Horarios:</strong> Todos los días de 13:00 a 18:00 (1 a 6 PM)</p>
+        <p><strong>🔞 Regla de Oro:</strong> Tener mínimo 10 años para jugar.</p>
+        
+        <a href="https://wa.me/595984596034" class="btn-ws" target="_blank">
+            <i class="fab fa-whatsapp"></i> RESERVAR POR WHATSAPP
+        </a>
+        <a href="https://chat.whatsapp.com/KxEnzdJLQU2EEGp2pBDSNL" style="color: #00d2ff; display: block; text-align: center; margin-top: 15px; text-decoration: none;">
+            Unirse al Grupo de WhatsApp 💬
+        </a>
+    </div>
+
+    <div class="card">
+        <h2><i class="fas fa-list-ol"></i> Tabla de Posiciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>POS</th>
+                    <th>EQUIPO</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: var(--dorado); font-weight: bold;">
+                    <td>1</td>
+                    <td>RENACIDOS FC 🦅</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rival 1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2><i class="fas fa-scroll"></i> Reglamento Interior</h2>
+        <ul>
+            <li>Tener mínimo 10 años cumplidos.</li>
+            <li>Respetar al árbitro y a los compañeros.</li>
+            <li>Cuidar el uniforme y las pelotas.</li>
+            <li>¡Jugar con garra como Kaká! 🥀💔</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>Desarrollado para el Club Renacidos FC &copy; 2026</p>
+</footer>
+
+</body>
+</html>
